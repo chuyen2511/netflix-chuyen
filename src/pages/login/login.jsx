@@ -10,6 +10,7 @@ const Login = () => {
   const [password, setPassword] = useState("")
 
   const user_auth =async (event)=>{
+    // ngắn chăn from tải lại trang và gửi biểu mẫu
     event.preventDefault();
     if(signState==='Sign In'){
       await login(email, password)
